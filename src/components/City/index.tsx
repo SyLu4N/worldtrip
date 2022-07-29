@@ -1,23 +1,13 @@
 import { Box, Flex, Heading, Img, Text } from '@chakra-ui/react';
 
+import { clearText } from '../../utils/clearText';
+
 interface CityProps {
   city: string;
   country: string;
 }
 
 export function City({ city, country }: CityProps) {
-  function clearText(text: string) {
-    const newText =
-      text[0].toLowerCase() +
-      text
-        .substring(1)
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/\s/g, '');
-
-    return newText;
-  }
-
   const urlCity = clearText(city);
   const urlCountry = clearText(country);
 
