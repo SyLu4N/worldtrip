@@ -13,30 +13,30 @@ export function Main() {
           mr="20"
           fontWeight="normal"
         >
-          A Europa é, por convenção, um dos seis continentes do mundo.
-          Compreendendo a península ocidental da Eurásia, a Europa geralmente
-          divide-se da Ásia a leste pela divisória de águas dos montes Urais, o
-          rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
+          A América do Sul é um continente que compreende a porção meridional da
+          América. Também é considerada um subcontinente do continente
+          americano. O Brasil representa atualmente a metade da população e
+          produto econômico desta região
         </Text>
 
         <Stack spacing="14" direction="row">
           <Flex direction="column" justify="center" align="center">
             <Text color="yellow.500" fontSize="4xl">
-              50
+              12
             </Text>
             <Text fontSize="xl">países</Text>
           </Flex>
 
           <Flex direction="column" justify="center" align="center">
             <Text color="yellow.500" fontSize="4xl">
-              60
+              9
             </Text>
             <Text fontSize="xl">línguas</Text>
           </Flex>
 
           <Flex direction="column" justify="center" align="center">
             <Text color="yellow.500" fontSize="4xl">
-              27
+              2
             </Text>
             <Text fontSize="xl">cidades +100</Text>
           </Flex>
@@ -47,16 +47,16 @@ export function Main() {
         Cidades +100
       </Text>
 
-      <SimpleGrid minChildWidth="246px" p="8rem" pl="7.5rem" pt="0" gap="5">
-        <City city="Londres" country="Reino Unido" />
-
-        <City city="Paris" country="França" />
-
-        <City city="Roma" country="Itália" />
-
-        <City city="Praga" country="República Tcheca" />
-
-        <City city="Amsterdã" country="Holanda" />
+      <SimpleGrid
+        minChildWidth="246px"
+        maxW="800px"
+        p="8rem"
+        pl="7.5rem"
+        pt="0"
+        gap="5"
+      >
+        <City city="Lima" country="Peru" />
+        <City city="Rio de Janeiro" country="Brasil" />
       </SimpleGrid>
     </>
   );

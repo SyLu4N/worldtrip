@@ -7,7 +7,7 @@ export default function Europa() {
   return (
     <>
       <Head>
-        <title>WorldTrip | Europa</title>
+        <title>WorldTrip | America</title>
       </Head>
 
       <Header />
