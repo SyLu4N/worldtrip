@@ -1,6 +1,7 @@
-import { Flex, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import { Flex, SimpleGrid, Text } from '@chakra-ui/react';
 
 import { City } from '../../components/City';
+import { Info } from '../../components/Info';
 
 export function Main() {
   return (
@@ -20,28 +21,9 @@ export function Main() {
           importantes político e economicamente.
         </Text>
 
-        <Stack spacing="14" direction="row">
-          <Flex direction="column" justify="center" align="center">
-            <Text color="yellow.500" fontSize="4xl">
-              4
-            </Text>
-            <Text fontSize="xl">países</Text>
-          </Flex>
-
-          <Flex direction="column" justify="center" align="center">
-            <Text color="yellow.500" fontSize="4xl">
-              5
-            </Text>
-            <Text fontSize="xl">línguas</Text>
-          </Flex>
-
-          <Flex direction="column" justify="center" align="center">
-            <Text color="yellow.500" fontSize="4xl">
-              7
-            </Text>
-            <Text fontSize="xl">cidades +100</Text>
-          </Flex>
-        </Stack>
+        <Flex gap="14" direction="row" display="flex" align="center">
+          <Info country="4" languages="5" citys="7" />
+        </Flex>
       </Flex>
 
       <Text p="8rem" pt="0" pb="10" fontSize="3xl" mt="20">

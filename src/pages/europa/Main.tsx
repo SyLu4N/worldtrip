@@ -1,4 +1,4 @@
-import { Flex, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import { Flex, SimpleGrid, Text } from '@chakra-ui/react';
 
 import { City } from '../../components/City';
 import { Info } from '../../components/Info';
@@ -21,29 +21,7 @@ export function Main() {
         </Text>
 
         <Flex gap="14" direction="row" display="flex" align="center">
-          <Flex direction="column" justify="center" align="center">
-            <Text color="yellow.500" fontSize="4xl">
-              50
-            </Text>
-            <Text fontSize="xl">países</Text>
-          </Flex>
-
-          <Flex direction="column" justify="center" align="center">
-            <Text color="yellow.500" fontSize="4xl">
-              60
-            </Text>
-            <Text fontSize="xl">línguas</Text>
-          </Flex>
-
-          <Flex direction="column" justify="center" align="center">
-            <Text color="yellow.500" fontSize="4xl">
-              27
-            </Text>
-            <Flex align="center" gap="2">
-              <Text fontSize="xl">cidades +100</Text>
-              <Info />
-            </Flex>
-          </Flex>
+          <Info country="50" languages="60" citys="27" />
         </Flex>
       </Flex>
 

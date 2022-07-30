@@ -1,4 +1,12 @@
-import { Box, Flex, SimpleGrid, Text, VStack } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Heading,
+  Img,
+  SimpleGrid,
+  Text,
+  VStack,
+} from '@chakra-ui/react';
 import Head from 'next/head';
 
 import { NavBar } from '../components/NavBar';
@@ -12,7 +20,34 @@ export default function Home() {
       </Head>
 
       <main>
-        <img src="/assets/banner.png" alt="Avião Amarelo" />
+        <Flex
+          backgroundImage="url('/assets/background.png')"
+          color="white"
+          h="335px"
+          align="left"
+          p={['4', '20']}
+          direction="column"
+          justify="center"
+          position="relative"
+        >
+          <Heading mb="6" fontSize={['2xl', '3xl']}>
+            5 Continentes,
+            <br /> infinitas possibilidades.
+          </Heading>
+          <Text fontSize={['small', 'md']} fontWeight="normal">
+            Chegou a hora de tirar do papel a viagem que você
+            <br /> sempre sonhou.
+          </Text>
+          <Img
+            display={['none', 'block']}
+            src="assets/airplane.png"
+            w="415px"
+            position="absolute"
+            right="8%"
+            bottom="-10%"
+          />
+        </Flex>
+
         <VStack spacing="16" mt="16">
           <SimpleGrid minChildWidth="150px" spacing="4" w="100%">
             <NavBar
@@ -47,7 +82,7 @@ export default function Home() {
           </Text>
         </VStack>
 
-        <Box mt="16" mb="16">
+        <Box mt="16" mb="16" h="450px">
           <Slide />
         </Box>
       </main>
