@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>WorldTrip</title>
+        <title>Home | WorldTrip</title>
       </Head>
 
       <main>

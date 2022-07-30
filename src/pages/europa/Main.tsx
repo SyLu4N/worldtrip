@@ -1,6 +1,7 @@
 import { Flex, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 
 import { City } from '../../components/City';
+import { Info } from '../../components/Info';
 
 export function Main() {
   return (
@@ -19,7 +20,7 @@ export function Main() {
           rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
         </Text>
 
-        <Stack spacing="14" direction="row">
+        <Flex gap="14" direction="row" display="flex" align="center">
           <Flex direction="column" justify="center" align="center">
             <Text color="yellow.500" fontSize="4xl">
               50
@@ -38,9 +39,12 @@ export function Main() {
             <Text color="yellow.500" fontSize="4xl">
               27
             </Text>
-            <Text fontSize="xl">cidades +100</Text>
+            <Flex align="center" gap="2">
+              <Text fontSize="xl">cidades +100</Text>
+              <Info />
+            </Flex>
           </Flex>
-        </Stack>
+        </Flex>
       </Flex>
 
       <Text p="8rem" pt="0" pb="10" fontSize="3xl" mt="20">

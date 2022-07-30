@@ -48,7 +48,14 @@ export function Main() {
         Cidades +100
       </Text>
 
-      <SimpleGrid minChildWidth="246px" maxW="80%" p="8rem" pt="0" gap="5">
+      <SimpleGrid
+        minChildWidth="246px"
+        maxW="80%"
+        p="8rem"
+        ml="-0.5rem"
+        pt="0"
+        gap="5"
+      >
         <City city="Nova York" country="Estados Unidos" />
         <City city="Cancun" country="México" />
         <City city="Toronto" country="Canadá" />
