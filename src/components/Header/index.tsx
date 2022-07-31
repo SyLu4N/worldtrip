@@ -8,7 +8,14 @@ export function Header() {
   const { asPath } = useRouter();
 
   return (
-    <Flex as="header" justify="center" w="full" p="3" position="relative">
+    <Flex
+      as="header"
+      justify="center"
+      w="full"
+      p="3"
+      position="relative"
+      bg="white"
+    >
       <Link href="/">
         <a>
           <img src="/assets/logo.png" alt="Logotipo" width={150} />

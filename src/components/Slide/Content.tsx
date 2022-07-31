@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Img, LinkBox, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, LinkBox, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 
 import { clearText } from '../../utils/clearText';
@@ -12,7 +12,7 @@ export function Content({ continent, text }: ContentProps) {
   const newContinent = clearText(continent);
 
   return (
-    <Box position="relative" border="1px" w="100%">
+    <Box position="relative" m={['0', '0 2rem']} w="100%" cursor="pointer">
       <Link href={newContinent}>
         <LinkBox
           h="450px"

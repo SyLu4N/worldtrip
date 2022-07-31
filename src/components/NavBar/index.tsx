@@ -19,7 +19,7 @@ export function NavBar({ src, alt, msg }: NavBarProps) {
       color="gray.600"
     >
       <Img src={src} alt={alt} w="70px" />
-      <Text fontSize="xl" mt="5">
+      <Text fontSize="xl" mt="5" w="150px" textAlign="center">
         {msg}
       </Text>
     </Flex>

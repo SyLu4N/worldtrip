@@ -23,14 +23,14 @@ export default function Home() {
         <Flex
           backgroundImage="url('/assets/background.png')"
           color="white"
-          h="335px"
+          h={['250px', '335px']}
           align="left"
           p={['4', '20']}
           direction="column"
           justify="center"
           position="relative"
         >
-          <Heading mb="6" fontSize={['2xl', '3xl']}>
+          <Heading mb="6" fontSize={'3xl'}>
             5 Continentes,
             <br /> infinitas possibilidades.
           </Heading>

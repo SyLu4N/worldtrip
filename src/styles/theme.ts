@@ -11,6 +11,8 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
+        position: 'relative',
+        overflowX: 'hidden',
         color: 'gray.600',
         fontWeight: '600',
       },

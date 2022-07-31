@@ -16,9 +16,7 @@ export function Description() {
       <PopoverTrigger>
         <Button
           bg="none"
-          mr="-2rem"
           h="18px"
-          w="18px"
           _hover={{ bg: 'none' }}
           _active={{ bg: 'none' }}
           p="0"
