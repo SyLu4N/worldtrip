@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Flex, Text } from '@chakra-ui/react';
 
 import { Description } from './description';
 
@@ -38,9 +38,9 @@ export function Info({ country, languages, citys }: InfoProps) {
           <Text fontSize={['md', 'xl']} w={['110px', '135px']}>
             cidades +100
           </Text>
-          <Box position="absolute" right="-2rem">
+          <Flex>
             <Description />
-          </Box>
+          </Flex>
         </Flex>
       </Flex>
     </Flex>
