@@ -27,7 +27,7 @@ export function Description() {
             <Icon as={BsInfoCircle} _hover={{ color: 'black' }} />
           </Button>
         </PopoverTrigger>
-        <PopoverContent w="260px">
+        <PopoverContent position="absolute" right="0">
           <PopoverCloseButton />
           <PopoverBody>
             Quantas cidades entre as 100+ visitadas do mundo

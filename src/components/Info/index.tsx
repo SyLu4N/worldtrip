@@ -38,7 +38,7 @@ export function Info({ country, languages, citys }: InfoProps) {
           <Text fontSize={['md', 'xl']} w={['110px', '135px']}>
             cidades +100
           </Text>
-          <Flex>
+          <Flex overflow="x">
             <Description />
           </Flex>
         </Flex>
