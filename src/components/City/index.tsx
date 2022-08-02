@@ -15,9 +15,10 @@ import { Modal } from './modal';
 interface CityProps {
   city: string;
   country: string;
+  description: string;
 }
 
-export function City({ city, country }: CityProps) {
+export function City({ city, country, description }: CityProps) {
   const urlCity = clearText(city);
   const urlCountry = clearText(country);
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,7 +28,7 @@ export function City({ city, country }: CityProps) {
       <Button
         onClick={onOpen}
         h="auto"
-        w="256px"
+        w="245px"
         p="0"
         textAlign="left"
         bg="transparent"
@@ -60,6 +61,7 @@ export function City({ city, country }: CityProps) {
                 borderColor="rgba(255, 186, 8, 0.5)"
                 borderTop="none"
                 borderRadius="0px 0px 6px 6px"
+                transitionDuration="600ms"
               >
                 <Box>
                   <Heading fontSize="xl">{city}</Heading>
@@ -85,7 +87,13 @@ export function City({ city, country }: CityProps) {
         </Tooltip>
       </Button>
 
-      <Modal isOpen={isOpen} onClose={onClose} />
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        city={city}
+        country={country}
+        description={description}
+      />
     </>
   );
 }

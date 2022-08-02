@@ -25,7 +25,11 @@ export default function Europa() {
       >
         {europa.map((city) => (
           <>
-            <City city={city.name} country={city.country} />
+            <City
+              city={city.name}
+              country={city.country}
+              description={city.description}
+            />
           </>
         ))}
       </SimpleGrid>

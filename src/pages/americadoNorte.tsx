@@ -2,8 +2,11 @@ import { SimpleGrid } from '@chakra-ui/react';
 
 import { City } from '../components/City';
 import { Main } from '../components/Main';
+import { citys } from '../utils/citys';
 
 export default function americadoNorte() {
+  const { americadoNorte } = citys;
+
   return (
     <Main
       country={{ name: 'America do Norte', number: '4' }}
@@ -21,9 +24,15 @@ export default function americadoNorte() {
         spacing="5"
         maxW="760px"
       >
-        <City city="Nova York" country="Estados Unidos" />
-        <City city="Cancun" country="México" />
-        <City city="Toronto" country="Canadá" />
+        {americadoNorte.map((city) => (
+          <>
+            <City
+              city={city.name}
+              country={city.country}
+              description={city.description}
+            />
+          </>
+        ))}
       </SimpleGrid>
     </Main>
   );

@@ -13,12 +13,26 @@ import {
   Text,
 } from '@chakra-ui/react';
 
+import { clearText } from '../../utils/clearText';
+
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
+  city: string;
+  country: string;
+  description: string;
 }
 
-export function Modal({ isOpen, onClose }: ModalProps) {
+export function Modal({
+  isOpen,
+  onClose,
+  description,
+  city,
+  country,
+}: ModalProps) {
+  const urlCity = clearText(city);
+  const urlCountry = clearText(country);
+
   return (
     <ModalChakra isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
@@ -31,8 +45,14 @@ export function Modal({ isOpen, onClose }: ModalProps) {
             borderRadius="6px 6px 0px 0px"
           />
         </ModalHeader>
-        <ModalCloseButton />
-        <ModalBody>{description}</ModalBody>
+        <ModalCloseButton
+          color="white"
+          bg="red.500"
+          fontWeight="bold"
+          transition="all 300ms"
+          _hover={{ bg: 'red' }}
+        />
+        <ModalBody textAlign="justify">{description}</ModalBody>
 
         <ModalFooter>
           <Flex align="center" justify="space-between" p="6" w="full">
