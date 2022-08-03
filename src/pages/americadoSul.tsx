@@ -19,10 +19,9 @@ export default function Europa() {
     >
       <SimpleGrid
         minChildWidth="230px"
-        m="0 8rem"
-        pt="0"
+        m={['0 1rem', '0 8rem']}
         spacing="5"
-        maxW="500px"
+        maxW="1030"
       >
         {americadoSul.map((city) => (
           <>

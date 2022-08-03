@@ -20,9 +20,9 @@ export default function americadoNorte() {
     >
       <SimpleGrid
         minChildWidth="230px"
-        m={['0 auto', '0 8rem']}
+        m={['0 1rem', '0 8rem']}
         spacing="5"
-        maxW="760px"
+        maxW="1030"
       >
         {americadoNorte.map((city) => (
           <>

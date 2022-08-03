@@ -43,7 +43,7 @@ export function Main({
         </Flex>
       </SimpleGrid>
 
-      <Text p={['0 1rem', '0 8rem']} pt="0" pb="10" fontSize="3xl" mt="20">
+      <Text p={['0 1rem', '0 8rem']} pt="0" fontSize="3xl" mt="20" mb="2.5rem">
         Cidades +100
       </Text>
 

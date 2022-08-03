@@ -11,6 +11,7 @@ export function Slide() {
     spaceBetween: 50,
     slidesPerView: 1,
     navigation: true,
+    rewind: true,
     pagination: {
       clickable: true,
     },

@@ -30,12 +30,13 @@ export function City({ city, country, description }: CityProps) {
         h="auto"
         w="245px"
         p="0"
+        m="auto"
         textAlign="left"
         bg="transparent"
         _hover={{ bg: 'transparent' }}
         _active={{ bg: 'transparent' }}
       >
-        <Tooltip label="Mais detalhes" bg="yellow.500">
+        <Tooltip label="Mais detalhes" bg="yellow.500" placement="bottom">
           <Flex
             cursor="pointer"
             justify={['center', 'left']}
