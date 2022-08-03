@@ -36,7 +36,12 @@ export function City({ city, country, description }: CityProps) {
         _hover={{ bg: 'transparent' }}
         _active={{ bg: 'transparent' }}
       >
-        <Tooltip label="Mais detalhes" bg="yellow.500" placement="bottom">
+        <Tooltip
+          label="Mais detalhes"
+          bg="yellow.500"
+          placement="bottom"
+          visibility={['hidden', 'visible']}
+        >
           <Flex
             cursor="pointer"
             justify={['center', 'left']}
