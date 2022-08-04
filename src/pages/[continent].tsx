@@ -55,14 +55,8 @@ export const getStaticPaths: GetStaticPaths = () => {
 
 export const getStaticProps: GetStaticProps = ({ params }: any) => {
   const rout = params.continent;
-  const routsValids = ['europa', 'americadoNorte', 'americadoSul'];
 
-  let data = {};
-
-  if (rout !== routsValids)
-    return {
-      props: { data: null },
-    };
+  let data = null;
 
   if (rout === 'europa') data = citys.europa;
   if (rout === 'americadoNorte') data = citys.americadoNorte;

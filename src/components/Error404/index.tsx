@@ -1,5 +1,15 @@
-import { Text } from '@chakra-ui/react';
+import { Heading } from '@chakra-ui/react';
+import Head from 'next/head';
 
 export function Error404() {
-  return <Text h="100vh">A rota que você procura não existe</Text>;
+  return (
+    <>
+      <Head>
+        <title>Worldtrip | 404</title>
+      </Head>
+      <Heading h="100vh" w="100vw" textAlign="center" mt="20">
+        A rota que você procura não existe
+      </Heading>
+    </>
+  );
 }
