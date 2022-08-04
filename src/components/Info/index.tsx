@@ -10,7 +10,7 @@ interface InfoProps {
 
 export function Info({ country, languages, citys }: InfoProps) {
   return (
-    <Flex gap="14" direction="row" display="flex" align="center">
+    <Flex gap="8" ml="1rem" direction="row" display="flex" align="center">
       <Flex direction="column" justify="center" align="center">
         <Text color="yellow.500" fontSize={['3xl', '4xl']}>
           {country}

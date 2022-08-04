@@ -34,7 +34,7 @@ export function Modal({
   const urlCountry = clearText(country);
 
   return (
-    <ModalChakra isOpen={isOpen} onClose={onClose}>
+    <ModalChakra isOpen={isOpen} onClose={onClose} isCentered>
       <ModalOverlay />
       <ModalContent borderRadius="10px">
         <ModalHeader p="0">

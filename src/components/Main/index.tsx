@@ -27,7 +27,11 @@ export function Main({
     <>
       <Header country={country.name} />
 
-      <SimpleGrid p={['0 1rem', '0 8rem']} minChildWidth="300px" spacing="6">
+      <SimpleGrid
+        p={['0 1rem', '0 3rem', '0 5rem', '0 8rem']}
+        minChildWidth="300px"
+        spacing="6"
+      >
         <Text
           maxW="500px"
           textAlign="justify"
@@ -38,7 +42,7 @@ export function Main({
           {description}
         </Text>
 
-        <Flex gap="14" direction="row" display="flex" align="center" m="auto">
+        <Flex direction="row" display="flex" align="center" m="auto">
           <Info country={country.number} languages={languages} citys={citys} />
         </Flex>
       </SimpleGrid>

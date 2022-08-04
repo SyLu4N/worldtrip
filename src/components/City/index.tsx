@@ -45,7 +45,7 @@ export function City({ city, country, description }: CityProps) {
           <Flex
             cursor="pointer"
             justify={['center', 'left']}
-            w="full"
+            w="255px"
             _hover={{
               border: '1px solid yellow',
               borderRadius: '7px',
