@@ -1,5 +1,8 @@
-import { Heading } from '@chakra-ui/react';
+import { IoIosArrowRoundBack } from 'react-icons/io';
+
+import { Flex, Heading, Icon, Img } from '@chakra-ui/react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export function Error404() {
   return (
@@ -7,9 +10,25 @@ export function Error404() {
       <Head>
         <title>Worldtrip | 404</title>
       </Head>
-      <Heading h="100vh" w="100vw" textAlign="center" mt="20">
+
+      <Img src="/assets/404.png" maxH="500px" m="auto" />
+      <Heading mt={['-3rem', '-5rem']} textAlign="center">
         A rota que você procura não existe
       </Heading>
+      <Link href="/">
+        <Flex
+          as="a"
+          m="auto"
+          mt="6"
+          alignItems="center"
+          w="max-content"
+          cursor="pointer"
+          _hover={{ color: 'black' }}
+        >
+          <Icon w="9" h="9" as={IoIosArrowRoundBack} />
+          Voltar
+        </Flex>
+      </Link>
     </>
   );
 }

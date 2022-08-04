@@ -10,6 +10,7 @@ interface ContentProps {
 
 export function Content({ continent, text }: ContentProps) {
   const newContinent = clearText(continent);
+  console.log(newContinent);
 
   return (
     <Box position="relative" m={['0', '0 2rem']} w="100%" cursor="pointer">

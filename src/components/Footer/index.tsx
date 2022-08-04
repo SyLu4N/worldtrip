@@ -28,6 +28,7 @@ export function Footer() {
         <Flex
           textAlign="center"
           w="full"
+          mt={['1rem', '0']}
           ml={['0', '-9.5rem']}
           justify="center"
           align="center"

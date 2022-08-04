@@ -36,6 +36,13 @@ export function Slide() {
           text={'O centro economico do mundo'}
         />
       </SwiperSlide>
+
+      <SwiperSlide>
+        <Content
+          continent={'África'}
+          text={'O continente com mais diversidade'}
+        />
+      </SwiperSlide>
     </Swiper>
   );
 }
