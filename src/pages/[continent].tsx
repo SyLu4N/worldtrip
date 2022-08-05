@@ -61,6 +61,7 @@ export const getStaticProps: GetStaticProps = ({ params }: any) => {
   if (rout === 'europa') data = citys.europa;
   if (rout === 'americadoNorte') data = citys.americadoNorte;
   if (rout === 'americadoSul') data = citys.americadoSul;
+  if (rout === 'africa') data = citys.africa;
 
   return {
     props: { data },

@@ -25,6 +25,10 @@ interface CitysProps {
     citys: DataProps[];
     summary: SummaryProps;
   };
+  africa: {
+    citys: DataProps[];
+    summary: SummaryProps;
+  };
 }
 
 export const citys: CitysProps = {
@@ -112,7 +116,7 @@ export const citys: CitysProps = {
       text: 'A América do Sul é um continente que compreende a porção meridional da América. Também é considerada um subcontinente do continente americano. O Brasil representa atualmente a metade da população e produto econômico desta região',
       citys: '2',
       country: '12',
-      languages: '9',
+      languages: 'x',
     },
     citys: [
       {
@@ -127,6 +131,31 @@ export const citys: CitysProps = {
         country: 'Brasil',
         description:
           'O Rio de Janeiro é um estado brasileiro situado na região Sudeste do país. É a quarta menor unidade da federação em área, mas a terceira mais populosa, reunindo 17,3 milhões de habitantes. Sua capital já foi também sede do governo brasileiro, entre 1763 e 1960.',
+      },
+    ],
+  },
+
+  africa: {
+    summary: {
+      name: 'Africa',
+      text: 'A África é o terceiro continente mais extenso com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3% da área total da terra firme do planeta. É o segundo continente mais populoso da Terra com cerca de um bilhão de pessoas, representando cerca de um sétimo da população mundial.',
+      citys: '2',
+      country: '54',
+      languages: '7',
+    },
+    citys: [
+      {
+        name: 'Joanesburgo',
+        country: 'África do Sul',
+        description:
+          'A Conferência de Joanesburgo foi a terceira grande conferência voltada para tratar do Meio Ambiente. Ela ficou conhecida como Cúpula Mundial sobre Desenvolvimento Sustentável, ou Rio+10, por ter ocorrido 10 anos após a conferência RIO-92.',
+      },
+
+      {
+        name: 'Marraquexe',
+        country: 'Marrocos',
+        description:
+          'Marraquexe é uma das mais importantes cidadelas do mundo muçulmano. A cidade foi fortificada pelo filho de ibne Taxufine, Ali ibne Iúçufe (Ben Youssef), que em 1122–1123 mandou construir as muralhas que ainda hoje existem, além de construir mais mesquitas e palácios.',
       },
     ],
   },
